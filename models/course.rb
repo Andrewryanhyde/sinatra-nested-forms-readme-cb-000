@@ -1,16 +1,14 @@
-class Student
-  attr_reader :name, :grade
+class Course 
+  attr_reader :name, :topic
 
-  STUDENTS = []
+  COURSES = []
 
-  def initialize(params)
+  def initialize(params) 
     @name = params[:name]
-    @grade = params[:grade]
-    STUDENTS < self
+    @topic = params[:topic]
+    COURSES < self 
   end
 
-  def self.all
-    STUDENTS
+  def self.all 
+    COURSES 
   end
-
-end
